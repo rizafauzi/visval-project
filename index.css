@@ -1,0 +1,535 @@
+.background {
+  background-color: #F5F4F3;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow: hidden; */
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #505050;
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  margin: 0;
+  text-align: right;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  color: #505050;
+  align-self: flex-start;
+  letter-spacing: 7px;
+  margin: 0px 0 -30px 0px;
+  text-align: left;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #707070;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  /* margin-top: 40px; */
+  margin-left: 20px;
+}
+
+.asd {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 30px;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  height: 125%;
+  margin-left: -21px;
+  width: 100%;
+}
+
+.logo img {
+  display: flex;
+  right: 0;
+  margin-top: -15px;
+  position: absolute;
+  height: 120%;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  gap: 0px 0px;
+  height: 60px;
+  grid-template-columns: 40.2% 44.8% 15%;
+}
+
+.nav-bar {
+  margin-top: 15x;
+  margin-left: -20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+.menu {
+  display: flex;
+  justify-self: center;
+  font-weight: 600;
+  color: #A89A8B;
+  font-size: 20px;
+}
+
+#selected {
+  cursor: pointer;
+  border-bottom: solid 1px #578189;
+  color: #578189;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ava-wrapper {
+  display: flex;
+  z-index: 55;
+  border-radius: 15px;
+}
+
+.ava-wrapper img {
+  display: flex;
+  z-index: 200;
+  height: 40px;
+}
+
+.icon {
+  display: flex;
+  height: 28px;
+}
+
+.menu li {
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 200%;
+}
+
+.content {
+  z-index: -4;
+  margin-top: 25px;
+  margin-left: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.overview {
+  height: 650px;
+  z-index: -2;
+  position: relative;
+  background-color: #DED6C8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+}
+
+.detail-container {
+  height: 64.6%;
+  display: flex;
+  border-top: solid 2px #CBCBCB;
+  border-bottom: solid 2px #CBCBCB;
+  align-items: center;
+  width: 18%;
+}
+
+.details {
+  display: flex;
+  height: 646px;
+  overflow: hidden;
+  justify-content: center;
+  margin-right: -21%;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 150%;
+}
+
+.text-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-wrapper {
+  width: 100%;
+  opacity: 1;
+  height: 250px;
+  transform: translateX(0%);
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.learn-more {
+  cursor: pointer;
+  height: 55px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px #578189;
+  font-weight: 600;
+  width: 100%;
+  background-color: #88B8C1;
+}
+
+.learn-more:hover .button-bg{
+  animation: myframe 600ms ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes myframe {
+  0% {
+    background-color: #88B8C1;
+    width: 0%;
+  }
+  100% {
+    background-color: #578189;
+    width: 83%;
+  }
+}
+
+.button-bg {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  position: absolute;
+  z-index: 20;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  width: 65%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.right-arrow {
+  height:55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  background-color: #578189;
+}
+
+.right-arrow img {
+  margin-left: 0px;
+  height: 35px;
+}
+
+.learn-more:hover .right-arrow img{
+  animation: arrow 1000ms cubic-bezier(0.62, 0.01, 0.33, 0.97) 600ms infinite normal forwards;
+}
+
+@keyframes arrow {
+  0% {
+    margin-left: 0px;
+  }
+  10% {
+    margin-left: -100px;
+  }
+  20% {
+    margin-left: -100px;
+  }
+  40% {
+    margin-left: 0px;
+  }
+  60% {
+    margin-left: -20px;
+  }
+  90% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.image-container {
+  display: flex;
+  z-index: 55;
+  transform: translateY(0%);
+}
+
+.image-container img {
+  display: flex;
+  z-index: 200;
+  margin-top: 100px;
+  height: 900px;
+}
+
+.new-drop {
+  height: 646px;
+  width: 34%;
+  border-top: solid 2px #CBCBCB;
+  border-bottom: solid 2px #CBCBCB;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.catalogue {
+  height: 77%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.catalogue-container {
+  height: 500px;
+  width: 280px;
+  display: flex;
+  transform: translateX(0%);
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+
+.scale-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalogue-container img {
+  height: 500px;
+}
+
+.stripe-bg {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.stripe-bg img {
+  height: 650px;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  z-index: 10;
+  justify-content: space-around;
+  width: 0px;
+}
+
+.next-button {
+  cursor: pointer;
+  margin-left: -40px;
+  height:60px;
+  width: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px 1px rgba(68,68,68,0.3);
+  background-color: #88B8C1;
+}
+
+.previous-button {
+  cursor: pointer;
+  margin-left: -40px;
+  height:60px;
+  width: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px 1px rgba(68,68,68,0.3);
+  background-color: #88B8C1;
+}
+
+.clicked {
+  background-color: #505050;
+  
+}
+
+
+
+.minimize {
+  visibility: hidden;
+  /* animation: fadeaway 700ms ease-in-out 0s 1 normal forwards; */
+}
+
+@keyframes fadeaway {
+  0% {
+    height: 500px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.next-button img {
+  margin-left: 0px;
+  height: 25px;
+}
+
+.previous-button img {
+  margin-left: 0px;
+  height: 25px;
+}
+
+.slide-image {
+  transform: translateX(0, 20);
+}
+
+.fadeOut {
+  animation: fadeOut 400ms ease-in-out 0s 1 normal forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 400ms ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes nextFade {
+	from {
+    opacity: 1;
+    height: 100%;
+	}
+	to {
+    opacity: 0;
+    height: 0%;
+	}
+}
+
+@keyframes slideNext {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(104%);
+  }
+}
+
+@keyframes previousFade {
+	from {
+    opacity: 0;
+    height: 0%;
+	}
+	to {
+    opacity: 1;
+    height: 100%;
+	}
+}
+
+@keyframes slidePrevious {
+  from {
+    transform: translateX(104%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+	from {
+    transform: translateX(-100%);
+    opacity: 0;
+	}
+	to {
+    transform: translateX(0%);
+    opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+    transform: translateX(0%);
+    opacity: 1;
+	}
+	to {
+    transform: translateX(100%);
+    opacity: 0;
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+    transform: translateX(100%);
+    opacity: 0;
+	}
+	to {
+    transform: translateX(0%);
+    opacity: 1;
+	}
+}
+
+@keyframes fadeOutLeft {
+	from {
+    transform: translateX(0%);
+    opacity: 1;
+	}
+	to {
+    transform: translateX(-100%);
+    opacity: 0;
+	}
+}
+
+@keyframes fadeInImg {
+  from {
+    transform: translateY(70%);
+    opacity: 0;
+	}
+	to {
+    transform: translateY(0%);
+    opacity: 1;
+	}
+}
+
+@keyframes fadeOutImg {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+	}
+	to {
+    transform: translateY(70%);
+    opacity: 0;
+	}
+}

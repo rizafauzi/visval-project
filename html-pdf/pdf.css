@@ -1,0 +1,171 @@
+h2 {
+  font-size: 18px;
+  line-height: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+@page {
+  size: 6.8in 9.25in;
+  margin: 0mm 0mm 0mm 0mm;
+}
+
+p {
+  font-size: 10px;
+  line-height: 90%;
+  font-family: 'Roboto', sans-serif;
+}
+
+span {
+  font-size: 7px;
+  line-height: 150%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.background {
+  padding: 2%;
+  width: 595px;
+  height: 842px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  border-radius: 10px;
+  border: solid 3px #E5E5E5;
+  background: white;
+}
+
+.logo-header {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+.description {
+  width: 60%;
+  display: flex;
+  padding-top: 1%;
+  padding-right: 2%;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.logo {
+  height: 60%;
+  width: 70%;
+  margin-left: -8%;
+  display: flex;
+  object-fit: contain;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.body {
+  width: 100%;
+  height: 80%;
+  margin-top: 2%;
+}
+
+.first-body {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.patient-container {
+  width: 47%;
+  height: 96%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: solid 2px #E5E5E5;
+}
+
+.data-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.key {
+  width: 30%;
+}
+
+.value {
+  width: 65%;
+}
+
+.second-body {
+  width: 98%;
+  display: flex;
+  margin-top: 2%;
+  padding-left: 2%;
+  margin-right: 2%;
+  background: white;
+  border-radius: 10px;
+  flex-direction: row;
+  border: solid 2px #E5E5E5;
+}
+
+.third-body {
+  padding: 2%;
+  width: 96%;
+  margin-top: 2%;
+  display: flex;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  background: #E5E5E5;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.splitter {
+  width: 50%;
+}
+
+#bold {
+  font-weight: 700;
+}
+
+#column {
+  flex-direction: column;
+}
+
+.line {
+  width: 100%;
+  height: 0px;
+  border-radius: 10px;
+  border: solid 1px #2b70a5;
+}
+
+#head {
+  margin-top: -1%;
+  margin-bottom: -1%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 20%  20%  15%;
+  padding: 10px;
+}
+
+.grid-item {
+  margin-top: -2%;
+  margin-bottom: -2%;
+  text-align: left;
+}
+
+.footer {
+  width: 100%;
+  height: 7%;
+}
